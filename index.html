@@ -6,16 +6,25 @@
   <title>Atomic Models Explained</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    .model-card {
-        transition: transform 0.3s ease-in-out;
+    body {
+      background-color: #0f0f0f;
+      background-image: url('data:image/svg+xml;utf8,<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg"><circle cx="500" cy="500" r="450" stroke="white" stroke-opacity="0.05" stroke-width="3" fill="none"/><circle cx="500" cy="500" r="300" stroke="white" stroke-opacity="0.05" stroke-width="2" fill="none"/><circle cx="500" cy="500" r="150" stroke="white" stroke-opacity="0.05" stroke-width="1.5" fill="none"/><circle cx="800" cy="500" r="5" fill="white" fill-opacity="0.07"/><circle cx="200" cy="500" r="5" fill="white" fill-opacity="0.07"/><circle cx="500" cy="800" r="5" fill="white" fill-opacity="0.07"/><circle cx="500" cy="200" r="5" fill="white" fill-opacity="0.07"/></svg>');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
     }
-    .model-card:hover {
-        transform: scale(1.25);
-    }
-</style>
 
+    .model-card {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .model-card:hover {
+      transform: scale(1.15);
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="text-white font-sans">
 
   <!-- Header -->
   <header class="bg-blue-600 text-white py-8 shadow-md">
@@ -29,94 +38,94 @@
   <main class="max-w-7xl mx-auto px-4 py-10">
     <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Model Card Component -->
-      <!-- Repeat for each model -->
-      <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
-        <h2 class="text-2xl font-semibold text-blue-600 relative pb-2 mb-4">
+      <!-- Reusable Card Component -->
+      <!-- Just change the model data as needed -->
+      <div class="bg-black bg-opacity-90 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl model-card">
+        <h2 class="text-2xl font-semibold text-blue-400 relative pb-2 mb-4">
           Dalton's Atomic Model (1803)
-          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-600 rounded"></span>
+          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded"></span>
         </h2>
-        <p class="text-gray-700 mt-4 leading-relaxed">
+        <p class="mt-4 leading-relaxed">
           John Dalton proposed that matter is made of indivisible atoms, which are identical for each element but different between elements. Atoms combine in fixed ratios to form compounds.
         </p>
-        <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+        <ul class="list-disc list-inside mt-4 space-y-1">
           <li>Atoms are solid, indestructible spheres.</li>
           <li>Each element has atoms of a specific mass.</li>
           <li>Chemical reactions involve rearrangement of atoms.</li>
         </ul>
-        <p class="text-sm text-gray-500 border-t border-dashed border-gray-300 pt-4 mt-4">
+        <p class="text-sm text-gray-400 border-t border-dashed border-gray-600 pt-4 mt-4">
           Limitations: Did not account for subatomic particles or isotopes.
         </p>
       </div>
 
-      <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
-        <h2 class="text-2xl font-semibold text-blue-600 relative pb-2 mb-4">
+      <div class="bg-black bg-opacity-90 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl model-card">
+        <h2 class="text-2xl font-semibold text-blue-400 relative pb-2 mb-4">
           Thomson's Plum Pudding Model (1897)
-          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-600 rounded"></span>
+          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded"></span>
         </h2>
-        <p class="text-gray-700 mt-4 leading-relaxed">
+        <p class="mt-4 leading-relaxed">
           J.J. Thomson discovered electrons and proposed that atoms are positively charged spheres with negatively charged electrons embedded within, like plums in a pudding.
         </p>
-        <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+        <ul class="list-disc list-inside mt-4 space-y-1">
           <li>Atoms contain both positive and negative charges.</li>
           <li>Electrons are scattered throughout a positive matrix.</li>
           <li>Atom is neutral overall.</li>
         </ul>
-        <p class="text-sm text-gray-500 border-t border-dashed border-gray-300 pt-4 mt-4">
+        <p class="text-sm text-gray-400 border-t border-dashed border-gray-600 pt-4 mt-4">
           Limitations: Failed to explain atomic stability or electron arrangement.
         </p>
       </div>
 
-      <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
-        <h2 class="text-2xl font-semibold text-blue-600 relative pb-2 mb-4">
+      <div class="bg-black bg-opacity-90 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl model-card">
+        <h2 class="text-2xl font-semibold text-blue-400 relative pb-2 mb-4">
           Rutherford's Nuclear Model (1911)
-          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-600 rounded"></span>
+          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded"></span>
         </h2>
-        <p class="text-gray-700 mt-4 leading-relaxed">
+        <p class="mt-4 leading-relaxed">
           Ernest Rutherford's gold foil experiment revealed that atoms have a dense, positively charged nucleus with electrons orbiting around it, like planets around the sun.
         </p>
-        <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+        <ul class="list-disc list-inside mt-4 space-y-1">
           <li>Nucleus contains most of the atom's mass.</li>
           <li>Electrons orbit the nucleus at a distance.</li>
           <li>Atom is mostly empty space.</li>
         </ul>
-        <p class="text-sm text-gray-500 border-t border-dashed border-gray-300 pt-4 mt-4">
+        <p class="text-sm text-gray-400 border-t border-dashed border-gray-600 pt-4 mt-4">
           Limitations: Could not explain why electrons don't spiral into the nucleus.
         </p>
       </div>
 
-      <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
-        <h2 class="text-2xl font-semibold text-blue-600 relative pb-2 mb-4">
+      <div class="bg-black bg-opacity-90 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl model-card">
+        <h2 class="text-2xl font-semibold text-blue-400 relative pb-2 mb-4">
           Bohr's Model (1913)
-          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-600 rounded"></span>
+          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded"></span>
         </h2>
-        <p class="text-gray-700 mt-4 leading-relaxed">
+        <p class="mt-4 leading-relaxed">
           Niels Bohr refined Rutherford's model by proposing that electrons orbit the nucleus in fixed energy levels, or shells, and can jump between them by absorbing or emitting energy.
         </p>
-        <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+        <ul class="list-disc list-inside mt-4 space-y-1">
           <li>Electrons move in quantized orbits.</li>
           <li>Energy levels correspond to specific electron orbits.</li>
           <li>Explains atomic spectra.</li>
         </ul>
-        <p class="text-sm text-gray-500 border-t border-dashed border-gray-300 pt-4 mt-4">
+        <p class="text-sm text-gray-400 border-t border-dashed border-gray-600 pt-4 mt-4">
           Limitations: Only accurate for hydrogen-like atoms.
         </p>
       </div>
 
-      <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out">
-        <h2 class="text-2xl font-semibold text-blue-600 relative pb-2 mb-4">
+      <div class="bg-black bg-opacity-90 p-6 rounded-xl border-l-4 border-blue-600 shadow-xl hover:shadow-2xl model-card">
+        <h2 class="text-2xl font-semibold text-blue-400 relative pb-2 mb-4">
           Quantum Mechanical Model (1926)
-          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-600 rounded"></span>
+          <span class="absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded"></span>
         </h2>
-        <p class="text-gray-700 mt-4 leading-relaxed">
+        <p class="mt-4 leading-relaxed">
           Developed by Schrödinger and others, this model uses quantum mechanics to describe electrons as probability clouds (orbitals) rather than fixed orbits, based on wave-particle duality.
         </p>
-        <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+        <ul class="list-disc list-inside mt-4 space-y-1">
           <li>Electrons exist in orbitals, regions of probability.</li>
           <li>Described by quantum numbers (n, l, m, s).</li>
           <li>Accounts for complex atoms and chemical bonding.</li>
         </ul>
-        <p class="text-sm text-gray-500 border-t border-dashed border-gray-300 pt-4 mt-4">
+        <p class="text-sm text-gray-400 border-t border-dashed border-gray-600 pt-4 mt-4">
           Limitations: Highly mathematical and complex to visualize.
         </p>
       </div>
